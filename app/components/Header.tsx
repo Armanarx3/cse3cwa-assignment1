@@ -4,6 +4,7 @@
 import React, { useState } from 'react'; // Import useState
 import styles from './Header.module.css';
 import Link from 'next/link'; // Import Link for navigation
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
@@ -17,9 +18,13 @@ const Header = () => {
       <div className={styles.studentInfo}>
         <Link href="/">22081507</Link>
       </div>
+      <ThemeToggle />
       <nav>
-        <button className={styles.menuButton} onClick={toggleMenu}>
-          ☰ {/* This is a basic hamburger icon */}
+        <button 
+            className={`${styles.menuButton} ${isMenuOpen ? styles.open : ''}`} 
+            onClick={toggleMenu}
+        >
+            ☰
         </button>
         {isMenuOpen && (
           <ul className={styles.menu}>

@@ -13,8 +13,6 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
-  /* app/components/Header.module.css */
-/* ... existing styles ... */
 
 .menuButton {
   background: none;
@@ -22,6 +20,11 @@
   font-size: 2rem;
   cursor: pointer;
   display: block; /* Adjust with media queries for responsiveness */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuButton.open {
+  transform: rotate(90deg); /* Add transform on open */
 }
 
 .menu {
