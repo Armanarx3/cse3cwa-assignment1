@@ -13,3 +13,29 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
+  /* app/components/Header.module.css */
+/* ... existing styles ... */
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block; /* Adjust with media queries for responsiveness */
+}
+
+.menu {
+  list-style: none;
+  position: absolute;
+  top: 60px; /* Position below header */
+  right: 2rem;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+  margin-bottom: 0.5rem;
+}
