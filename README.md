@@ -58,11 +58,11 @@ You need to have Node.js (version 18.x or later) and npm installed on your machi
 Installation & Setup
 1. Clone the repository:
 
-git clone <your-repository-url>
+git clone your-repository-url
 
 2. Navigate to the project directory:
 
-cd <repository-folder-name>
+cd repository-folder-name
 
 3. Install NPM packages:
 
