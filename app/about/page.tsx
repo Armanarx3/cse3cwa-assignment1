@@ -9,9 +9,12 @@ const AboutPage = () => {
       <p><strong>Student Number:</strong> 22081507</p>
 
       <h2>How to Use This Website</h2>
-      <p>
-        [Your demonstration video will be embedded here once it is recorded.]
-      </p>
+      <video width="100%" controls>
+      <source src="/tutorial.mp4" type="video/mp4" />
+    
+      </video>
+        
+      
     </div>
   );
 };
